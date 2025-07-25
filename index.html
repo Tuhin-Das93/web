@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="tab-link active" data-tab="home">Home</a></li>
+                <li><a href="#" class="tab-link" data-tab="publications">Publications</a></li>
+                <li><a href="https://medium.com/@yourusername" target="_blank">Blogs</a></li>
+                <li><a href="#" class="tab-link" data-tab="projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <a href="resume.pdf" target="_blank" class="resume-link">📄 Check My Resume</a>
+            <h1>Welcome to My Website</h1>
+            <p>This is the Home page. You can add a short introduction here.</p>
+
+            <!-- About Me Section -->
+            <div class="about-container">
+                <img src="my_photo.jpg" alt="My Photo" class="about-photo">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I am [Your Name]! I am passionate about technology, research, and writing.
+                        I love creating impactful projects, writing blogs, and sharing my learnings with the world.
+                        On this website, you’ll find my publications, projects, and blogs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="tab-content">
+            <h1>Publications</h1>
+            <p>List your research papers or articles here.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="tab-content">
+            <h1>Projects</h1>
+            <p>Showcase your work and portfolio here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
