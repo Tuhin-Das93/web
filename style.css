@@ -91,7 +91,7 @@ main {
 /* Resume Download Button */
 .resume-link {
   display: inline-block;
-  background-color: #ff9800;
+  background-color: #120991;
   color: #000;
   font-weight: bold;
   padding: 10px 16px;
@@ -102,7 +102,7 @@ main {
 }
 
 .resume-link:hover {
-  background-color: #e38c00;
+  background-color: #120991;
 }
 
 /* Case Study Embed */
