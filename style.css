@@ -35,11 +35,11 @@ header {
 }
 
 .profile-photo {
-  width: 100px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
   display: block;
-  margin: 20px auto;
+  margin: 20px left;
 }
 
 .nav-links li a {
@@ -91,7 +91,7 @@ main {
 /* Resume Download Button */
 .resume-link {
   display: inline-block;
-  background-color: #120991;
+  background-color: #a7a2f5;
   color: #000;
   font-weight: bold;
   padding: 10px 16px;
@@ -102,7 +102,7 @@ main {
 }
 
 .resume-link:hover {
-  background-color: #120991;
+  background-color: #a7a2f5;
 }
 
 /* Case Study Embed */
