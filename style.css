@@ -8,13 +8,12 @@ body {
 header {
     background: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px 15px;
 }
 
 .nav-container {
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
     overflow-x: auto;
 }
 
@@ -23,25 +22,31 @@ header {
     display: flex;
     padding: 0;
     margin: 0;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .nav-links li {
-    margin: 0 15px 10px 0;
+    margin: 5px 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+.nav-links a:hover,
 .nav-links a.active {
-    border-bottom: 2px solid #2b089e;
+    background-color: #ff9800;
 }
 
 main {
     padding: 20px;
+    text-align: center;
 }
 
 .tab-content {
@@ -50,6 +55,16 @@ main {
 
 .tab-content.active {
     display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Resume Button */
@@ -81,7 +96,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .about-photo {
@@ -89,7 +103,7 @@ main {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 .about-text h2 {
@@ -100,65 +114,88 @@ main {
     text-align: justify;
 }
 
-/* Publication Buttons */
-.btn-publication {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    background-color: #2196f3;
-    color: white;
+/* Publication Cards */
+.publication-entry {
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.publication-entry h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.publication-entry p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.publication-entry a {
+    color: #007BFF;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
 }
 
-.btn-publication:hover {
-    background-color: #0b7dda;
+.publication-entry a:hover {
+    text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Case Study Entry */
+.case-study {
+    background-color: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.case-study h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.case-study a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.case-study a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
-    .nav-container {
-        justify-content: flex-start;
-        padding-left: 10px;
+@media screen and (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin: 0 0 15px 0;
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 8px;
     }
 
     .nav-links li {
-        margin: 5px 0;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .about-photo {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     main {
-        padding: 10px;
+        padding: 15px;
     }
 
-    .resume-link,
-    .btn-publication {
-        width: 90%;
-        text-align: center;
+    .resume-link {
+        margin-top: 10px;
     }
 }
